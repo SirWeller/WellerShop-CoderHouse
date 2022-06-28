@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+*{
+	font-family: "Josefin sans", sans-serif;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 100%;
+	height: 100%;
+}
+
+img{
+	width: 100%;
+}
+
+body{
+	background-image: url("../images/background1.jpg");
+	background-attachment: fixed;
+}
+
+.logo{
+	vertical-align: top;
+	width: 50px;
+	border-radius: 6px;
+}
+
+.logo:hover{
+	transition: 0.3s;
+	width: 55px;
+}
+
+.cropped1 {
+	width: cover; 
+	height: 80px;
+	object-fit: cover;
+}
+
+.white-link:hover{
+	transition: 0.3s;
+	color: #648653;
+}
+
+.img-footer{
+	width: 25px;
+}
+
+.img-footer:hover{
+	transition: 0.4s;
+	width: 27px;
+}
+
+/* ================== Upper ================================*/
+
+.back-btn {
+	background-color: rgba(220, 220, 250, 0.8);
+	padding: 5px;
+	margin: 5px 20%;
+	border-radius: 10px;
+	color: #984848;
+}
+
+/* ================== Nav ==================================*/
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 20px;
+	background-color: white;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	position: sticky;
+	box-shadow: 0 0 10px 0 black;
+	grid-area: nav;
+}
+
+ul, li{
+	list-style: none;
+	display: inline-block;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	color: black;
+	padding: 16px 20px;
+	font-size: 16px;
+	margin: 0;
+	transition: 0.3s;
+}
+
+.btn:hover,.btn2:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+/* ================== Grid Mobile ===========================*/
+
+.contenedor{
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: 
+	"topper"
+	"nav"
+	"header"
+	"aside"
+	"main"
+	"footer";
+}
+
+.topper{
+	background-color: lightblue;
+	grid-area: topper;
+}
+
+.nav{
+	background-color: white;
+	grid-area: nav;
+}
+
+.aside{
+	background-color: grey;
+	grid-area: aside;
+}
+
+.main{
+	background-color: lightskyblue;
+	grid-area: main;
+}
+
+.footer{
+	background-color: black;
+	grid-area: footer;
+}
