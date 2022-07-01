@@ -3,382 +3,82 @@
 	font-family: "Josefin sans", sans-serif;
 	padding: 0;
 	margin: 0;
-	text-align: center;
-}
-
-html{
-	font-size: 100%;
-	width: 100%;
-}
-
-img{
-	width: 100%;
 }
 
 body{
 	background-image: url("../images/background1.jpg");
-	background-attachment: fixed;
-	max-width: 992px;
-	margin: auto;
+	background-attachment: fixed;	
+	background-size: cover;
 }
 
-a {
+a{
 	text-decoration: none;
-	color: white;
 }
 
-/* ================== Upper ================================*/
+h3{
+	color: black;
+}
 
-.back-btn {
+.navbar-dark .nav-item .nav-link {
+  color: white;
+}
+
+.navbar-dark .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.fa-li {
+  position: relative;
+  left: 0;
+}
+
+.img-carousel{
+	height: 300px;
+	object-fit: cover;
+}
+
+.back-top {
 	background-color: rgba(220, 220, 250, 0.8);
 	padding: 5px;
 	margin: 5px 20%;
 	border-radius: 10px;
-	color: #984848;
 }
 
-/* ================== Nav ==================================*/
-
-.logo{
-	vertical-align: top;
-	width: 50px;
-	margin-left: 30px;
-	border-radius: 6px;
-}
-
-nav{
-	display: flex;
-	padding: 5px 20px;
-	background-color: white;
-	position: sticky;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	box-shadow: 0 0 10px 0 black;
-	top: 0;
-	margin: 0;
-}
-
-ul, li{
-	list-style: none;
-	display: flex;
-}
-
-.btn {
-	display: flex;
-	border: none;
-	color: black;
-	padding: 16px 20px;
-	font-size: 16px;
-	margin: 0;
+.nav-item, .nav-link{
+	padding: 8px 20px;	
 	transition: 0.3s;
 }
 
-.btn:hover,.btn2:hover {
-  background-color: lightblue;
-  color: white;
+.nav-item:hover {
+	background-color: lightblue;
+	border-radius: 3px;
 }
 
-/* ================== Header ===============================*/
-
-.cropped {
-	width: cover; 
-	height: 200px;
-	object-fit: cover;
+.nav-link:hover{
+	color: white !important;
 }
 
-.cropped1 {
-	width: cover; 
-	height: 80px;
-	object-fit: cover;
+.item-hover:hover{
+	transition: 0.3s;
+	color: black;
+	background-color: lightblue;
+	box-shadow: 0 0 15px 1px rgb(50, 50, 50);	
 }
-
-/* ================== Main =================================*/
 
 .btn2 {
-	border: none;
-	color: #132D2B;
-	padding: 16px;
-	margin: 0 10%;
+	background-color: lightblue;
+	width: 500px;
 	border-radius: 20px;
-	transition: 0.3s;
 }
 
-/* ================== Artículos ============================*/
-
-figure a{
-	color: black;
+.active{
+	font-weight: 700;
+	border-bottom-style: solid;
 }
 
-.menu{
-	display: inline-block;
-	width: 250px;
-	margin-top: 10px;
-	vertical-align: top;
-	border-radius: 15px;
+.bg-lightblue{
 	background-color: lightblue;
 }
-
-.menuMin{
-	width: 180px;
-	vertical-align: top;
-	display: inline-block;
-}
-
-.menuMin:hover,.menu:hover{
-	transition: 0.2s;
-	box-shadow: 0 0 15px 1px rgb(50, 50, 50);
-	border-radius: 10px;
-}
-/* ================== Footer ===============================*/
-
-footer{
-	background-color: black;
-	padding: 0px 0 10px 0;
-}
-
-footer nav{
-	border-radius: 0;
-	background-color: black;
-	border-bottom-style: solid;
-	border-color: white;
-	display: flex;
-	justify-content: space-between;
-}
-
-footer nav ul li{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 5px;
-}
-
-
-footer nav ul li a{
-	color: white;
-}
-
-.footer-copyright{
-	margin: 15px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.white-link:hover{
-	transition: 0.3s;
-	color: #648653;
-}
-
-.img-footer{
-	width: 30px;
-}
-/* ================== Grid =================================*/
-
-.contenedor{
-	display: grid;
-	grid-template: 
-	"topper topper topper"	40px
-	"nav nav nav"						auto
-	"header header header"	auto
-	"aside main main"				auto
-	"footer footer footer"	auto;
-}
-
-.topper{
-	grid-area: topper;
-}
-
-.nav{
-	grid-area: nav;
-	display: flex;
-	justify-content: space-between;
-}
-
-.nav-toggle{
-	display: none;
-	background: none;
-	border: none;
-	height: 25px;
-	width: 30px;
-	border-radius: 3px;
-	align-self: center;
-	padding: 5px;
-	transition: 0.3s;
-  cursor: pointer;
-}
-
-.nav-toggle:hover {
-  background-color: lightskyblue;
-}
-
-.nav-footer-toggle{
-	display: none;
-	background: none;
-	border: none;
-	height: 25px;
-	width: 30px;
-	border-radius: 3px;
-	align-self: center;
-	padding: 5px;
-	transition: 0.3s;
-  cursor: pointer;
-}
-
-.nav-footer-toggle:hover {
-  background-color: lightskyblue;
-}
-
-.nav-footer_input{
-	display: none;
-}
-
-.header{
-	grid-area: header;	
-}
-
-.nav_input{
-	display: none;
-}
-
-.aside{
-	background-color: rgba(200, 200, 200, 0.7);
-	grid-area: aside;
-	padding: 30px;
-	margin: 10px;
-}
-
-.main{
-	background-color: rgba(0, 100, 250, 0.3);
-	grid-area: main;
-	padding: 10px;
-	margin: 10px;
-}
-
-.flex{
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 50px;
-
-}
-
-.footer{
-	grid-area: footer;
-}
-
-iframe{
-	height: 300px;
-	width: 300px;
-}
-
-/* ================== Grid Mobile ==========================*/
-
-@media (max-width: 768px){
-
-	.contenedor1{
-		display: grid;
-		grid-template: 
-		"topper"	40px
-		"nav"			auto
-		"header"	auto
-		"main"		auto
-		"footer"	auto;
-	}
-
-	.contenedor{
-		display: grid;
-		grid-template: 
-		"topper"	40px
-		"nav"			auto
-		"header"	auto
-		"aside"		100px
-		"main"		auto
-		"footer"	auto;
-	}
-
-	.logo{
-	width: 30px;
-	margin-left: 20px;
-	}
-	
-	.nav{
-		grid-area: nav;
-		height: 30px;
-	}
-
-	.nav-toggle{
-		display: flex;
-		justify-content: left;
-	}
-
-	.nav-menu{
-		flex-direction: column;
-		position: fixed;
-		right: -100%;
-		top: 45px;
-		margin-top: 35px;
-		max-width: 110px;
-		background-color: #2c3e50;
-		transition: 0.4s;
-	}
-
-	.btn{
-		margin: 0;
-		justify-content: center;
-		padding: 10px 35px;
-		max-width: 40px;
-		color: white;
-	}
-
-	.nav-menu li{
-		background-color: #2c3e50;
-	}
-
-	.nav_input:checked + .nav-menu{
-		right: 0;
-	}
-	
-	.aside{
-		overflow-y: scroll;
-		background-color: rgba(200, 200, 200, 0.7);
-		grid-area: aside;
-		padding: 10px;
-		margin: 10px;
-	}
-	
-	.main{
-		flex-direction: column;
-		background-color: rgba(0, 100, 250, 0.3);
-		grid-area: main;
-		padding: 10px;
-		margin: 10px;
-	}
-	
-	iframe{
-	height: 300px;
-	width: 300px;
-}
-
-
-	.nav-footer{
-		flex-direction: column;
-		position: fixed;
-		align-items: center;
-		left: -100%;
-		bottom: 120px;
-		max-width: 130px;
-		background-color: #2c3e50;
-		transition: 0.4s;
-	}
-
-	.nav-footer_input:checked + .nav-footer{
-		left: 0;
-	}	
-
-	.footer-nav{
-		margin: 0 20px;
-	}
-
-	.nav-footer-toggle{
-		display: flex;
-		justify-content: left;
-	}
-/* ================== Grid Mobile2 =========================*/
