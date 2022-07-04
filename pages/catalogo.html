@@ -1,71 +1,233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WellerShop - Artículos de cotillón</title>
-	<link rel="shortcut icon" href="../images/icon.png">
-	<link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="contenedor1">
-	<div class="topper">
-		<h5 class="back-btn">No te olvides de revisar nuestro catálogo por descuentos!</h5>
-	</div>
-	<nav class="nav">
-		<a href="../index.html">
-			<img src="../images/logo.png" alt="logo de WellerShop" class="logo">
-		</a>				
-		<label for="menu" class="nav-toggle">
-			<img src="../images/menu-hamburguesa.png" alt="menu">
-		</label>
-		<input type="checkbox" id="menu" class="nav_input">
-		<ul class="nav-menu">
-			<li><a href="../index.html" class="btn">		Inicio				</a></li>	
-			<li><a href="productos.html" class="btn">		Productos			</a></li>
-			<li><a href="contacto.html" class="btn">		Contacto			</a></li>
-			<li><a href="catalogo.html" class="btn">		Catálogo			</a></li>
-			<li><a href="quienes-somos.html" class="btn">	Quienes Somos?		</a></li>
-		</ul>
-	</nav>
-	<header class="header">
-		<a href="../index.html"><img src="../images/cotillon.jpg" alt="Cotillón y fiestas Weller" class="cropped1"></a>
-	</header>
-	<main class="main"></main>
-	<footer class="footer">
-		<nav class="footer-nav">
-			<label for="footer-menu" class="nav-footer-toggle">
-				<img src="../images/menu-footer.png" alt="menu">
-			</label>
-			<input type="checkbox" id="footer-menu" class="nav-footer_input">
-			<ul class="nav-footer">
-				<li><a href="" class="white-link">Cómo comprar</a></li>
-				<li><a href="" class="white-link">Aviso de reclamo</a></li>
-				<li><a href="" class="white-link">Mis pedidos</a></li>
-				<li><a href="contacto.html#ubicacion" class="white-link">Como llegar?</a></li>
-				<li><a href="" class="white-link">Botón de arrepentimiento</a></li>
-			</ul>
-			<div class="img-footer">
-				<a href="https://www.facebook.com/SirWeller" target="_blank"><img src="../images/facebook-icon.png" alt="Weller facebook"></a>
-			</div>
-			<div class="img-footer">
-				<a href="https://streamlabs.com/weller" target="_blank"><img src="../images/paypal-icon.png" alt="Donaciones Weller"></a>
-			</div>
-			<div class="img-footer">
-				<a href="https://www.instagram.com/sky_weller/" target="_blank"><img src="../images/instagram-icon.png" alt="Instagram Weller"></a>
-			</div>
-			<div class="img-footer">
-				<a href="https://wa.me/+5491131932567?text=WellerShop,%20Cotillón%20y%20Fiestas" target="_blank">
-				<img src="../images/whatsapp-icon.png" alt="WhatsApp WellerShop"></a>
-			</div>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="shortcut icon" href="../images/icon.png">
+		<link rel="stylesheet" href="../css/style.css">
+    <title>Catálogo - WellerShop</title>
+  </head>
+  <body>
+  	<div class="py-2 text-center text-white">
+  		<h5 class="back-top">No te olvides de revisar nuestro catálogo por descuentos!</h5>
+  	</div>
+  	<!-- Inicia Nav -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow">
+		  <div class="container">
+		    <a class="navbar-brand" href="../index.html">
+		    	<img src="../images/logo.png" alt="logo de WellerShop" width="55">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		        <li class="nav-item">
+		          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="productos.html">Productos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link active" href="catalogo.html">Catálogo</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="contacto.html">Contacto</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="quienes-somos.html">Nosotros</a>
+		        </li>
+		      </ul>
+		      <form class="d-flex">
+		        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+		        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+		      </form>
+		    </div>
+		  </div>
 		</nav>
-		<div class="footer-copyright">
-			<div>
-				<a href="https://www.facebook.com/SirWeller" target="_blank" class="white-link">Desarrollado por Weller</a>
-			</div>
-			<div>
-				<a href="https://www.facebook.com/SirWeller" target="_blank" class="white-link">Copyright © 2022 Weller.  All Rights Reserved.</a>
-			</div>
-		</div>
-	</footer>
-</body>
+  	<!-- Cierra Nav -->
+  	<main class="py-5 text-center">
+  		<div class="container">
+  			<div class="py-3 bg-lightblue rounded-3 mb-4 mx-5 border border-primary border-3">
+  				<h1 class="m-0">Nuestro Catálogo de Productos</h1>
+  			</div>
+  			<div class="row">
+  				<div class="col">
+  					<h2>Tarjetas de Invitación</h2>
+  					<!-- Inicia carousel -->
+				  	<div id="carouselTarjetas" class="carousel slide pb-4" data-bs-ride="carousel">
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="../images/catalogo/01.jpg" class="d-block w-100" alt="Tarjetas 01">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/02.jpg" class="d-block w-100" alt="Tarjetas 02">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/03.jpg" class="d-block w-100" alt="Tarjetas 03">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/04.jpg" class="d-block w-100" alt="Tarjetas 04">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/05.jpg" class="d-block w-100" alt="Tarjetas 05">
+						    </div>
+						  </div>
+						  <button class="carousel-control-prev" type="button" data-bs-target="#carouselTarjetas" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#carouselTarjetas" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						  </button>
+						</div>
+				  	<!-- Cierra carousel -->
+				  	<h2>Adornos Luminosos</h2>
+				  	<!-- Inicia carousel -->
+				  	<div id="carouselAdornos" class="carousel slide pb-4" data-bs-ride="carousel">
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="../images/catalogo/01.jpg" class="d-block w-100" alt="Tarjetas 01">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/02.jpg" class="d-block w-100" alt="Tarjetas 02">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/03.jpg" class="d-block w-100" alt="Tarjetas 03">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/04.jpg" class="d-block w-100" alt="Tarjetas 04">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/05.jpg" class="d-block w-100" alt="Tarjetas 05">
+						    </div>
+						  </div>
+						  <button class="carousel-control-prev" type="button" data-bs-target="#carouselAdornos" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#carouselAdornos" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						  </button>
+						</div>
+				  	<!-- Cierra carousel -->
+				  	<h2>Comestibles</h2>
+				  	<!-- Inicia carousel -->
+				  	<div id="carouselComestibles" class="carousel slide pb-4" data-bs-ride="carousel">
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="../images/catalogo/01.jpg" class="d-block w-100" alt="Tarjetas 01">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/02.jpg" class="d-block w-100" alt="Tarjetas 02">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/03.jpg" class="d-block w-100" alt="Tarjetas 03">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/04.jpg" class="d-block w-100" alt="Tarjetas 04">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="../images/catalogo/05.jpg" class="d-block w-100" alt="Tarjetas 05">
+						    </div>
+						  </div>
+						  <button class="carousel-control-prev" type="button" data-bs-target="#carouselComestibles" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#carouselComestibles" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						  </button>
+						</div>
+				  	<!-- Cierra carousel -->
+  				</div>
+  			</div>
+  		</div>
+  	</main>
+
+
+		<!-- Footer -->
+		<footer class="bg-dark text-center text-white">
+		  <!-- Grid container -->
+		  <div class="container p-4">
+		    <!-- Section: Social media -->
+		    <section class="mb-4">
+		      <!-- Facebook -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/SirWeller" target="_blank" role="button">
+		      	<img src="../images/facebook-icon.png" alt="Weller facebook" width="40px">
+		      </a>
+
+		      <!-- Paypal -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="https://streamlabs.com/weller" target="_blank" role="button">
+		      	<img src="../images/paypal-icon.png" alt="Donaciones Weller" width="40px">
+		      </a>
+
+		      <!-- Instagram -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/sky_weller/" target="_blank" role="button">
+		      	<img src="../images/instagram-icon.png" alt="Instagram Weller" width="40px">
+		      </a>
+
+		      <!-- Whatsapp -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/+5491131932567?text=WellerShop,%20Cotillón%20y%20Fiestas" target="_blank" role="button">
+		      	<img src="../images/whatsapp-icon.png" alt="WhatsApp WellerShop" width="40px">
+		      </a>
+		    </section>
+		    <!-- Section: Social media -->
+
+		    <!-- Section: Form -->
+		    <section class="">
+		      <form action="">
+		        <!--Grid row-->
+		        <div class="row d-flex justify-content-center">
+		          <!--Grid column-->
+		          <div class="col-auto">
+		            <p class="pt-2">
+		              <strong>Suscríbete para recibir todas las ofertas!</strong>
+		            </p>
+		          </div>
+		          <!--Grid column-->
+
+		          <!--Grid column-->
+		          <div class="col-md-5 col-12">
+		            <!-- Email input -->
+		            <div class="form-outline form-white mb-4">
+		              <input type="email" id="form5Example21" class="form-control" />
+		              <label class="form-label" for="form5Example21">Email</label>
+		            </div>
+		          </div>
+		          <!--Grid column-->
+
+		          <!--Grid column-->
+		          <div class="col-auto">
+		            <!-- Submit button -->
+		            <button type="submit" class="btn btn-outline-light mb-4">
+		              Subscríbete!
+		            </button>
+		          </div>
+		          <!--Grid column-->
+		        </div>
+		        <!--Grid row-->
+		      </form>
+		    </section>
+		    <!-- Section: Form -->
+		  </div>
+		  <!-- Grid container -->
+		  <!-- Copyright -->
+		  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		    Copyright © 2022:
+		    <a class="text-white" href="https://www.facebook.com/SirWeller" target="_blank"> Weller.  All Rights Reserved.</a>
+		  </div>
+		  <!-- Copyright -->
+		</footer>
+		<!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -1,153 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WellerShop - Artículos de cotillón</title>
-	<link rel="shortcut icon" href="../images/icon.png">
-	<link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="contenedor1">
-	<div class="topper">
-		<h5 class="back-btn">No te olvides de revisar nuestro catálogo por descuentos!</h5>
-	</div>
-	<nav class="nav">
-		<a href="../index.html">
-			<img src="../images/logo.png" alt="logo de WellerShop" class="logo">
-		</a>				
-		<label for="menu" class="nav-toggle">
-			<img src="../images/menu-hamburguesa.png" alt="menu">
-		</label>
-		<input type="checkbox" id="menu" class="nav_input">
-		<ul class="nav-menu">
-			<li><a href="../index.html" class="btn">		Inicio				</a></li>	
-			<li><a href="productos.html" class="btn">		Productos			</a></li>
-			<li><a href="contacto.html" class="btn">		Contacto			</a></li>
-			<li><a href="catalogo.html" class="btn">		Catálogo			</a></li>
-			<li><a href="quienes-somos.html" class="btn">	Quienes Somos?		</a></li>
-		</ul>
-	</nav>
-	<header class="header">
-		<a href="../index.html"><img src="../images/cotillon.jpg" alt="Cotillón y fiestas Weller" class="cropped1"></a>
-	</header>
-	<main class="main flex">
-		<section class="formulario inline">
-			<form action="envio.php">
-				<fieldset class="bloque-formal">
-					<legend>Información Personal</legend>
-					<label for="name">Nombre *</label>
-					<br>
-					<input type="text" id="name" placeholder="Diego Armando Solís">
-					<br>
-					<label for="mail">e-mail *</label>
-					<br>
-					<input type="text" id="mail" placeholder="Weller123@email.com">
-					<br>
-					<label for="tel">Teléfono *</label>
-					<br>
-					<input type="text" id="tel" placeholder="011-15-xxxx-4240">
-					<br>
-					<label for="asunto">Asunto *</label>
-					<br>
-					<input type="text" id="asunto" placeholder="Consulta, lista de precios...">
-					<br>
-				</fieldset>
-				<fieldset class="bloque-formal">
-					<legend>Opcional</legend>
-					<label for="estado-civil">Estado civil</label>
-					<br>
-					<select name="estado-civil" id="">
-						<option value="soltero">Soltero/a</option>
-						<option value="casado">Casado/a</option>
-						<option value="conviven">En concubinato</option>
-						<option value="divorciado">Divorciado/a</option>
-						<option value="viudo">Viudo/a</option>
-						<option value="otro">Otro</option>
-					</select>
-					<br>
-					<label for="hijos">Cantidad de hijos</label>
-					<br>
-					<label for="0">0</label>
-					<input type="radio" id="0" name="cantHijos" value="0">
-					<br>
-					<label for="1">1</label>
-					<input type="radio" id="1" name="cantHijos" value="1">
-					<br>
-					<label for="2">2</label>
-					<input type="radio" id="2" name="cantHijos" value="2">					
-					<br>
-					<label for="otro">Otra cantidad</label>
-					<input type="radio" id="otro" name="cantHijos" value="otro">
-					<br>
-					<input type="text" id="distinto" name="cantHijos" placeholder="4 Hijos">		
-				</fieldset>
-				<fieldset class="bloque-formal">
-					<legend>Términos y otro</legend>
-					<label for="newspaper">Quiero recibir nuevas ofertas al mail</label>
-					<input type="checkbox" id="newspaper" value="newspaper">
-					<br>
-					<label for="terminos">Acepto los términos y condiciones</label>
-					<input type="checkbox" id="terminos" value="terminos">
-				</fieldset>
-				<br>
-				<fieldset class="bloque-formal">
-					<legend>Tu Mensaje</legend>
-					<label for="mensaje"></label>
-					<textarea placeholder="Hola, necesitaría lista de precios..." name="messaje" id="mensaje" cols="40" rows="10"></textarea>
-				</fieldset>
-				<br>
-				<input type="reset" value="Cancelar">
-				<input type="submit" value="Enviar">				
-			</form>
-			<br>
-		</section>
-		<section class="inline">
-			<div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24712.76040567452!2d-76.65119852089843!3d39.2634099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c80376ef5343f9%3A0xebb35185ff1d31bf!2sWeller%20Development%20Company!5e0!3m2!1ses!2sar!4v1653875073981!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-				<p>Ubicación 9999, Quilmes Oeste, Provincia de Buenos Aires</p>
-				<h4><b>Información de contacto</b></h4>
-				<ul>
-					<li>email: <a href="mailto:yonahukun@gmail.com">WellerShop@enterprise.com.ar</a></li>
-					<li>Tel: (011) 42xx-xx01 </li>
-				</ul>
-			</div>
-		</section>
-	</main>
-	<footer class="footer">
-		<nav class="footer-nav">
-			<label for="footer-menu" class="nav-footer-toggle">
-				<img src="../images/menu-footer.png" alt="menu">
-			</label>
-			<input type="checkbox" id="footer-menu" class="nav-footer_input">
-			<ul class="nav-footer">
-				<li><a href="" class="white-link">Cómo comprar</a></li>
-				<li><a href="" class="white-link">Aviso de reclamo</a></li>
-				<li><a href="" class="white-link">Mis pedidos</a></li>
-				<li><a href="contacto.html#ubicacion" class="white-link">Como llegar?</a></li>
-				<li><a href="" class="white-link">Botón de arrepentimiento</a></li>
-			</ul>
-			<div class="img-footer">
-				<a href="https://www.facebook.com/SirWeller" target="_blank"><img src="../images/facebook-icon.png" alt="Weller facebook"></a>
-			</div>
-			<div class="img-footer">
-				<a href="https://streamlabs.com/weller" target="_blank"><img src="../images/paypal-icon.png" alt="Donaciones Weller"></a>
-			</div>
-			<div class="img-footer">
-				<a href="https://www.instagram.com/sky_weller/" target="_blank"><img src="../images/instagram-icon.png" alt="Instagram Weller"></a>
-			</div>
-			<div class="img-footer">
-				<a href="https://wa.me/+5491131932567?text=WellerShop,%20Cotillón%20y%20Fiestas" target="_blank">
-				<img src="../images/whatsapp-icon.png" alt="WhatsApp WellerShop"></a>
-			</div>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="shortcut icon" href="../images/icon.png">
+		<link rel="stylesheet" href="../css/style.css">
+    <title>Contacto - WellerShop</title>
+  </head>
+  <body>
+  	<div class="py-2 text-center text-white">
+  		<h5 class="back-top">No te olvides de revisar nuestro catálogo por descuentos!</h5>
+  	</div>
+  	<!-- Inicia Nav -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow">
+		  <div class="container">
+		    <a class="navbar-brand" href="../index.html">
+		    	<img src="../images/logo.png" alt="logo de WellerShop" width="55">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		        <li class="nav-item">
+		          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="productos.html">Productos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="catalogo.html">Catálogo</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link active" href="contacto.html">Contacto</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="quienes-somos.html">Nosotros</a>
+		        </li>
+		      </ul>
+		      <form class="d-flex">
+		        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+		        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+		      </form>
+		    </div>
+		  </div>
 		</nav>
-		<div class="footer-copyright">
-			<div>
-				<a href="https://www.facebook.com/SirWeller" target="_blank" class="white-link">Desarrollado por Weller</a>
-			</div>
-			<div>
-				<a href="https://www.facebook.com/SirWeller" target="_blank" class="white-link">Copyright © 2022 Weller.  All Rights Reserved.</a>
-			</div>
-		</div>
-	</footer>
-</body>
+  	<!-- Cierra Nav -->
+  	<main class="py-5 text-center">
+  		<div class="container">
+  			<div class="row">
+  				<div class="pt-4 pt-md-0">
+  					<div class="py-3 bg-lightblue rounded-3 mb-4 mx-5 border border-primary border-3">
+  						<h1>Contáctanos</h1>
+  					</div>
+  				</div>
+  				<div class="col-sm-12 col-lg-5 pt-3 pt-md-0 bg-grey border border-white border-3">
+  				  <form class="text-start fs-5 p-3">
+  				  	<div class="mb-3">
+						    <label for="name" class="form-label">Nombre*</label>
+						    <input type="text" class="form-control" id="name" placeholder="Nahuel">
+						  </div>
+						  <div class="mb-3">
+						    <label for="sName" class="form-label">Apellido*</label>
+						    <input type="text" class="form-control" id="sName" placeholder="Perez">
+						  </div>
+						  <div class="mb-3">
+						    <label for="inputEmail" class="form-label">Email*</label>
+						    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="weller123@shop.com.ar">
+						    <div id="emailHelp" class="form-text">Tu email NO será compartido con nadie.</div>
+						  </div>
+						  <div class="mb-3">
+						    <label for="affair" class="form-label">Asunto</label>
+						    <input type="text" class="form-control" id="affair" placeholder="Consulta">
+						  </div>
+
+						  <div class="mb-3">
+						  	<label for="textarea" class="form-label">Tu Mensaje:</label>
+							  <textarea class="form-control" placeholder="Deja tu mensaje aquí..." id="textarea"></textarea>
+							</div>
+
+						  <div class="d-xxl-flex justify-content-between">
+							  <div class="mb-3 form-check">
+							    <input type="checkbox" class="form-check-input" id="newspaper">
+							    <label class="form-check-label" for="newspaper">Deseo recibir novedades</label>
+							  </div>
+							  <div class="text-end">
+							  	<button type="reset" class="btn btn-primary">Cancelar</button>
+							  	<button type="submit" class="btn btn-primary">Enviar</button>
+							  </div>
+						  </div>
+						</form>
+  				</div>
+  				<span class="col-lg-1"></span>
+					<div class="col-sm-12 col-lg-6 pt-3 pt-md-0 bg-warning border border-white border-3">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24712.76040567452!2d-76.65119852089843!3d39.2634099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c80376ef5343f9%3A0xebb35185ff1d31bf!2sWeller%20Development%20Company!5e0!3m2!1ses!2sar!4v1653875073981!5m2!1ses!2sar" height="400px" width="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map   p-3"></iframe>
+							<div class="fs-5">
+								<p><strong>Dirección:</strong>Gral Acha 881 Quilmes O. Buenos Aires.</p>
+								<p><b>Horario de atención de Lunes a Viernes de 9 a 17:00hs.</b></p>
+								<p><strong>Email:</strong> weller123@shop.com.ar</p>
+							</div>
+  				</div>
+  			</div>
+  		</div>
+  	</main>
+
+
+		<!-- Footer -->
+		<footer class="bg-dark text-center text-white">
+		  <!-- Grid container -->
+		  <div class="container p-4">
+		    <!-- Section: Social media -->
+		    <section class="mb-4">
+		      <!-- Facebook -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/SirWeller" target="_blank" role="button">
+		      	<img src="../images/facebook-icon.png" alt="Weller facebook" width="40px">
+		      </a>
+
+		      <!-- Paypal -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="https://streamlabs.com/weller" target="_blank" role="button">
+		      	<img src="../images/paypal-icon.png" alt="Donaciones Weller" width="40px">
+		      </a>
+
+		      <!-- Instagram -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/sky_weller/" target="_blank" role="button">
+		      	<img src="../images/instagram-icon.png" alt="Instagram Weller" width="40px">
+		      </a>
+
+		      <!-- Whatsapp -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/+5491131932567?text=WellerShop,%20Cotillón%20y%20Fiestas" target="_blank" role="button">
+		      	<img src="../images/whatsapp-icon.png" alt="WhatsApp WellerShop" width="40px">
+		      </a>
+		    </section>
+		    <!-- Section: Social media -->
+
+		    <!-- Section: Form -->
+		    <section class="">
+		      <form action="">
+		        <!--Grid row-->
+		        <div class="row d-flex justify-content-center">
+		          <!--Grid column-->
+		          <div class="col-auto">
+		            <p class="pt-2">
+		              <strong>Suscríbete para recibir todas las ofertas!</strong>
+		            </p>
+		          </div>
+		          <!--Grid column-->
+
+		          <!--Grid column-->
+		          <div class="col-md-5 col-12">
+		            <!-- Email input -->
+		            <div class="form-outline form-white mb-4">
+		              <input type="email" id="form5Example21" class="form-control" />
+		              <label class="form-label" for="form5Example21">Email</label>
+		            </div>
+		          </div>
+		          <!--Grid column-->
+
+		          <!--Grid column-->
+		          <div class="col-auto">
+		            <!-- Submit button -->
+		            <button type="submit" class="btn btn-outline-light mb-4">
+		              Subscríbete!
+		            </button>
+		          </div>
+		          <!--Grid column-->
+		        </div>
+		        <!--Grid row-->
+		      </form>
+		    </section>
+		    <!-- Section: Form -->
+		  </div>
+		  <!-- Grid container -->
+		  <!-- Copyright -->
+		  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		    Copyright © 2022:
+		    <a class="text-white" href="https://www.facebook.com/SirWeller" target="_blank"> Weller.  All Rights Reserved.</a>
+		  </div>
+		  <!-- Copyright -->
+		</footer>
+		<!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>

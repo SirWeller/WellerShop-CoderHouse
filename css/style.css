@@ -15,6 +15,10 @@ a{
 	text-decoration: none;
 }
 
+ul li{
+	list-style: none;
+}
+
 h3{
 	color: black;
 }
@@ -53,7 +57,7 @@ h3{
 }
 
 .nav-item:hover {
-	background-color: lightblue;
+	background-color: rgb(220, 220, 250);
 	border-radius: 3px;
 }
 
@@ -64,12 +68,12 @@ h3{
 .item-hover:hover{
 	transition: 0.3s;
 	color: black;
-	background-color: lightblue;
+	background-color: rgb(220, 220, 250);
 	box-shadow: 0 0 15px 1px rgb(50, 50, 50);	
 }
 
 .btn2 {
-	background-color: lightblue;
+	background-color: rgb(220, 220, 250);
 	width: 500px;
 	border-radius: 20px;
 }
@@ -80,5 +84,24 @@ h3{
 }
 
 .bg-lightblue{
-	background-color: lightblue;
+	background-color: rgb(220, 220, 250);
+}
+
+.bg-grey{
+	background-color: rgb(200, 200, 200);
+}
+
+.list-hover:hover{
+	transition: 0.2s;
+	background-color: rgb(220, 220, 250);
+	border-radius: 3px;	
+}
+
+/* Mobile sm */
+
+@media (max-width: 768px){
+	.aside{
+		max-height: 150px;
+		overflow-y: scroll;
+	}
 }
