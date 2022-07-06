@@ -11,6 +11,12 @@ body{
 	background-size: cover;
 }
 
+.dark-body{
+	background-image: url("../images/fiestas/backgroundNosotros.jpg");
+	background-attachment: unset;
+	background-size: 100%;
+}
+
 a{
 	text-decoration: none;
 }
@@ -21,6 +27,10 @@ ul li{
 
 h3{
 	color: black;
+}
+
+.logo{
+	width: 55px;
 }
 
 .navbar-dark .nav-item .nav-link {
@@ -40,8 +50,9 @@ h3{
 }
 
 .img-carousel{
-	height: 300px;
+	height: 600px;
 	object-fit: cover;
+	max-height: 600px;
 }
 
 .back-top {
@@ -59,6 +70,10 @@ h3{
 .nav-item:hover {
 	background-color: rgb(220, 220, 250);
 	border-radius: 3px;
+}
+
+.bg-custom-black{
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .nav-link:hover{
@@ -95,6 +110,15 @@ h3{
 	transition: 0.2s;
 	background-color: rgb(220, 220, 250);
 	border-radius: 3px;	
+}
+
+.social-img{
+	width: 40px;
+}
+
+.iframe-map{
+	height: 400px;
+	width: 90%;
 }
 
 /* Mobile sm */
