@@ -1,5 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap");
+* {
+  font-family: "Josefin sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  background-color: blue;
+  background-image: url("../images/background1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h3 {
+  color: black;
+}
+
+.bg-custom-black {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bg-lightblue {
+  background-color: rgb(220, 220, 250);
+}
+
+.bg-grey {
+  background-color: rgb(200, 200, 200);
+}
+
+nav img {
+  width: 55px;
+}
+
+.back-top {
+  background-color: rgba(220, 220, 250, 0.8);
+  padding: 5px;
+  margin: 5px 20%;
+  border-radius: 10px;
+}
+
+.nav-item, .nav-link {
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+.nav-item:hover, .nav-link:hover {
+  background-color: rgb(220, 220, 250);
+  border-radius: 3px;
+  color: white !important;
+}
+
+.active {
+  font-weight: 700;
+  border-bottom-style: solid;
+}
+
+.item-hover:hover {
+  transition: 0.3s;
+  color: black;
+  background-color: rgb(220, 220, 250);
+  box-shadow: 0 0 15px 1px rgb(50, 50, 50);
+}
+
+.iframe-map {
+  height: 400px;
+  width: 90%;
+}
+
+.btn2 {
+  background-color: rgb(220, 220, 250);
+  width: 500px;
+  border-radius: 20px;
+}
+
+.list-hover:hover {
+  transition: 0.2s;
+  background-color: rgb(220, 220, 250);
+  border-radius: 3px;
+}
+
+/* Mobile sm */
+@media (max-width: 768px) {
+  .aside {
+    max-height: 150px;
+    overflow-y: scroll;
+  }
+}
+footer img {
+  width: 40px;
+}
+
+.dark-body {
+  background-image: url("../images/fiestas/backgroundNosotros.jpg");
+  background-attachment: unset;
+  background-size: 100%;
+}
+
+main img {
+  width: 100%;
+}
+
+.navbar-dark .nav-item .nav-link {
+  color: white;
+}
+.navbar-dark .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.img-carousel {
+  height: 600px;
+  object-fit: cover;
+  max-height: 600px;
 }
 
 /*# sourceMappingURL=style.css.map */

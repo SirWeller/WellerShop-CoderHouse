@@ -1,0 +1,30 @@
+// nav
+
+nav{
+	img{
+		width:55px;
+	}
+}
+
+.back-top {
+	background-color: $back-lightblue-transparent;
+	padding: 5px;
+	margin: 5px 20%;
+	border-radius: $border-lg;
+}
+
+.nav-item, .nav-link{
+	padding: 8px 20px;	
+	transition: 0.3s;
+	&:hover{
+		background-color:$mainColor;
+		border-radius: $border-sm;
+		color:$white !important;
+	}
+}
+
+.active{
+	font-weight: 700;
+	border-bottom-style: solid;
+}
+

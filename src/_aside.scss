@@ -1,0 +1,16 @@
+// _aside
+
+.list-hover:hover{
+	transition: 0.2s;
+	background-color: $mainColor;
+	border-radius: $border-sm;	
+}
+
+/* Mobile sm */
+
+@media (max-width: 768px){
+	.aside{
+		max-height: 150px;
+		overflow-y: scroll;
+	}
+}

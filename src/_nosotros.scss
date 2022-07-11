@@ -1,0 +1,30 @@
+//Nosotros
+
+.dark-body{
+	background-image: url("../images/fiestas/backgroundNosotros.jpg");
+	background-attachment: unset;
+	background-size: 100%;
+}
+
+main{
+	img{
+		width:100%;
+	}
+}
+
+
+.navbar-dark .nav-item .nav-link {
+  color: $white;
+  &:hover{
+  	background-color: $back-dark-transparent;
+	  transition: all 0.3s ease;
+	  border-radius: $border-rem-sm;
+	  color: $white;
+  }
+}
+
+.img-carousel{
+	height: 600px;
+	object-fit: cover;
+	max-height: 600px;
+}

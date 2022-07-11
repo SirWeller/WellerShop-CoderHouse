@@ -1,3 +1,10 @@
-body{
-	background-color: blue;
-}
+//imports
+
+@import "_vars"		;
+@import "_fonts"	;
+@import "_commons"	;
+@import "_navBar"	;
+@import "_body"		;
+@import "_aside"	;
+@import "_footer"	;
+@import "_nosotros" ;
