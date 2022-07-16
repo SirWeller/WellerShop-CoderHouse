@@ -12,19 +12,19 @@ main{
 	}
 }
 
-
-.navbar-dark .nav-item .nav-link {
-  color: $white;
-  &:hover{
-  	background-color: $back-dark-transparent;
-	  transition: all 0.3s ease;
-	  border-radius: $border-rem-sm;
-	  color: $white;
-  }
+.power-div{
+	@include boxBg_Text_Rounded_($back-dark-transparent,$white);
 }
 
-.img-carousel{
-	height: 600px;
-	object-fit: cover;
-	max-height: 600px;
+.bg-nosotros1{
+	background-color: map-get($map:$colores-livianos, $key:'1');
 }
+
+.bg-nosotros2{
+	background-color: map-get($map:$colores-livianos, $key:'3');
+}
+
+
+
+
+

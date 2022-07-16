@@ -35,3 +35,38 @@ h3{
 .bg-grey{
 	background-color: $grey;
 }
+
+.item-hover:hover{
+	transition: 0.3s;
+	color: $black;
+	background-color: $mainColor;
+	box-shadow: 0 0 15px 1px $shadow;	
+}
+
+.navbar-dark .nav-item .nav-link {
+  color: $white;
+  &:hover{
+  	background-color: $back-dark-transparent;
+	  transition: all 0.3s ease;
+	  border-radius: $border-rem-sm;
+	  color: $white;
+  }
+}
+
+.img-carousel{
+	height: 600px;
+	object-fit: cover;
+	max-height: 600px;
+}
+
+.iframe-map{
+	height: 400px;
+	width: 90%;
+}
+
+.btn2 {
+	background-color: $mainColor;
+	width: 500px;
+	border-radius: $border-xl;
+}
+
