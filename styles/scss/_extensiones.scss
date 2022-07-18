@@ -1,4 +1,10 @@
 //extensiones
+.display-custom{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 //== Map ==
 
 $colores-livianos:(
@@ -13,4 +19,9 @@ $colores-livianos:(
 	background-color: $color;
 	color: $colorT;
 	border: $borde;
+}
+
+@mixin w_h($w,$h){
+	width:  $w;
+	height: $h;
 }

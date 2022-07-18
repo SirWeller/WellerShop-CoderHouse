@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap");
+.display-custom, .item-hover, .item-hover-extension {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   font-family: "Josefin sans", sans-serif;
   padding: 0;
@@ -6,7 +12,7 @@
 }
 
 body {
-  background-image: url("../images/background1.jpg");
+  background-image: url("../../images/background1.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -35,11 +41,21 @@ h3 {
   background-color: rgb(200, 200, 200);
 }
 
-.item-hover:hover {
-  transition: 0.3s;
-  color: black;
-  background-color: rgb(220, 220, 250);
+.bg-secondaryColor {
+  background-color: blue;
+}
+
+.item-hover, .item-hover-extension {
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.item-hover:hover, .item-hover-extension:hover {
   box-shadow: 0 0 15px 1px rgb(50, 50, 50);
+}
+.item-hover a img:hover, .item-hover-extension a img:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
 }
 
 .navbar-dark .nav-item .nav-link {
@@ -72,9 +88,6 @@ h3 {
 nav img {
   width: 55px;
 }
-nav ul li a:hover {
-  color: white;
-}
 
 .back-top {
   background-color: rgba(220, 220, 250, 0.8);
@@ -84,14 +97,20 @@ nav ul li a:hover {
 }
 
 .btn-custom-nav {
+  margin: 3px;
+  padding: 0 5px;
   transition: 0.3s;
 }
 .btn-custom-nav:hover {
   background-color: rgb(220, 220, 250);
   border-radius: 3px;
 }
+.btn-custom-nav a:hover {
+  color: white !important;
+}
 
 .active {
+  padding-bottom: 0;
   font-weight: 700;
   border-bottom-style: solid;
 }
@@ -114,7 +133,7 @@ footer img {
 }
 
 .dark-body {
-  background-image: url("../images/fiestas/backgroundNosotros.jpg");
+  background-image: url("../../images/fiestas/backgroundNosotros.jpg");
   background-attachment: unset;
   background-size: 100%;
 }
@@ -134,7 +153,24 @@ main img {
 }
 
 .bg-nosotros2 {
-  background-color: rgba(250, 0, 0, 0.3);
+  background-color: rgba(250, 128, 0, 0.3);
+}
+
+.item-hover-extension img {
+  overflow: hidden;
+}
+.item-hover-extension img:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.max-box {
+  max-width: 500px;
+  text-align: center;
+}
+.max-box p {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */

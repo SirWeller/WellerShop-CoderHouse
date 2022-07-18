@@ -4,9 +4,6 @@ nav{
 	img{
 		width:55px;
 	}
-	ul li a:hover{
-		color: $white;
-	}
 }
 
 .back-top {
@@ -17,14 +14,20 @@ nav{
 }
 
 .btn-custom-nav{
+	margin: 3px;
+	padding: 0 5px;
 	transition: 0.3s;
 	&:hover{
 		background-color:$mainColor;
 		border-radius: $border-sm;
 	}
+	a:hover{
+		color: $white !important;
+	}
 }
 
 .active{
+	padding-bottom: 0;
 	font-weight: 700;
 	border-bottom-style: solid;
 }

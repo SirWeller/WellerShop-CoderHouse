@@ -7,7 +7,7 @@
 }
 
 body{
-	background-image: url("../images/background1.jpg");
+	background-image: url("../../images/background1.jpg");
 	background-attachment: fixed;	
 	background-size: cover;
 }
@@ -36,11 +36,26 @@ h3{
 	background-color: $grey;
 }
 
-.item-hover:hover{
-	transition: 0.3s;
-	color: $black;
-	background-color: $mainColor;
-	box-shadow: 0 0 15px 1px $shadow;	
+.bg-secondaryColor{
+	background-color: $secondaryColor;
+}
+
+.item-hover{
+	@extend .display-custom;
+	border-radius: 6px;
+	overflow:hidden;
+	transition:  0.4s;
+	&:hover{
+		box-shadow: 0 0 15px 1px $shadow;
+	}
+	a{
+		img{
+			&:hover{
+				transition:  0.4s;
+				transform: scale(1.1);
+			}
+		}
+	}
 }
 
 .navbar-dark .nav-item .nav-link {
